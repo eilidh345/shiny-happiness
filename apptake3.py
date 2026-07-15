@@ -2,8 +2,8 @@ import streamlit as web
 from Bio import Entrez
 from datetime import datetime,timedelta
 web.title("NCBI Academic Paper Search")
-email = web.text_input ("add personal email (required by ncbi)", "Eilidh.McVie@childrens.harvard.edu")
-query_term = web.text_input("add search query term", "traumatic brain injury")
+email = web.text_input ("add personal email (required by ncbi)", "email")
+query_term = web.text_input("add search query term", "search term")
 number_of_results_desired = web.slider("Select Number of Results Desired", min_value=1, max_value=200, value=5)
 today = datetime.now()
 search_frame = web.slider("time period of search", min_value=1, max_value=365, value=14)
